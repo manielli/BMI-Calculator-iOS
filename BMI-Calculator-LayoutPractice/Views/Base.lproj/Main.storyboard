@@ -76,8 +76,8 @@
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="100Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-Wr-wDN">
-                                                        <rect key="frame" x="326.5" y="0.0" width="47.5" height="50"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="100.0Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIh-Wr-wDN">
+                                                        <rect key="frame" x="313.5" y="0.0" width="60.5" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -133,6 +133,10 @@
                             <constraint firstItem="BNK-LP-0XI" firstAttribute="bottom" secondItem="BbH-8h-eD3" secondAttribute="bottom" id="lmd-71-fDi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="onR-F4-ZbV" id="FhZ-RE-IJD"/>
+                        <outlet property="weightLabel" destination="YIh-Wr-wDN" id="RDg-jB-Kwu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
