@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func heightSliderChanged(_ sender: UISlider) {
+        print("height slider changed to \(sender.value)")
+    }
+    @IBAction func weighSliderChanged(_ sender: UISlider) {
+        print("weight slider changed to \(sender.value)")
+    }
+    
 
 }
 
