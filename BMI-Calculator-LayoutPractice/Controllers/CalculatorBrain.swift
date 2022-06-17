@@ -9,10 +9,23 @@
 import Foundation
 
 struct CalculatorBrain {
-    var bmi: Float = 0.0
+    var bmi: Float?
     
     func getBMIValue() -> String {
-        let bmiTo1DecimalPlace = String(format: "%.1f", bmi)
+//        if bmi != nil {
+//            let bmiTo1DecimalPlace = String(format: "%.1f", bmi!)
+//            return bmiTo1DecimalPlace
+//        } else {
+//            return 0.0
+//        }
+//        
+//        if let safeBMI = bmi {
+//            let bmiTo1DecimalPlace = String(format: "%.1f", safeBMI)
+//            return bmiTo1DecimalPlace
+//        } else {
+//            return 0.0
+//        }
+        let bmiTo1DecimalPlace = String(format: "%.1f", bmi ?? 0.0)
         return bmiTo1DecimalPlace
     }
     
