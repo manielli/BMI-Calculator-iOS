@@ -29,6 +29,14 @@ struct CalculatorBrain {
         return bmiTo1DecimalPlace
     }
     
+    func getBMIColor() -> UIColor {
+        return bmi?.color ?? #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+    }
+    
+    func getBMIAdvice() -> String {
+        return bmi?.advice ?? "Eat some more snacks!"
+    }
+    
     mutating func calculateBMI(height: Float, weight: Float) {
 //        let bmiValue = weight / (height * height)
         let bmiValue = weight / pow(height, 2)
